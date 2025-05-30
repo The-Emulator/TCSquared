@@ -1,0 +1,161 @@
+/* Header and Nav Starts */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--BG-color);
+  background-image: url(black.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+  --HD-color: rgb(18, 46, 21);
+  --Nav-color: rgb(189, 212, 189);
+  --Color: rgb(0, 0, 0);
+  --BG-color: rgb(189, 212, 189);
+}
+nav{
+  background-color: var(--HD-color);
+  box-shadow: rgba(11, 134, 11, 0.1);
+}
+nav ul{
+  width: 100%;  
+  font-size: 1.3em;
+  font-weight: 500;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo{  
+  font-size: 1.25em;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.col a{  
+  color: whitesmoke;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.logo a:hover{
+  background-color: var(--HD-color);
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 9em;
+  z-index: 999;
+  background-color: var(--Nav-color);
+  backdrop-filter: blur(15px);
+  box-shadow: -40px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li a:hover{
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.843);
+}
+.ccr{
+  background-color: var(--HD-color);
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar li a{
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-weight: 577em;
+  border-bottom: .1em solid black;
+}
+.menu-button{
+    display: none;
+}
+/* Background Image */
+.bg-image{
+  background-color: black;
+}
+.bg-image img{  
+  width: 100%;
+  height: 100%;
+}
+
+
+/* About God */
+.ag-main{
+  background-color: rgb(169, 190, 189);
+}
+.g-image img{
+  width: 100%;
+  height: 100%;
+}
+.ag h1{  
+  margin: 0 .3em 0 .3em;
+  font-size: 1.3em;
+  color: var(--Color);
+}
+.ag p{
+  padding: 0 .5em 1em .5em;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.8em;
+  background-color: black;
+  color: whitesmoke;
+  width: 100%;
+}
+.footer p{
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+/* Media */
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
